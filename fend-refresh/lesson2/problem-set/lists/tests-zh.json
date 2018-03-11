@@ -1,0 +1,47 @@
+[{
+    "name": "无序列表测验",
+    "code": "listlistlistlist",
+    "tests": [{
+            "description": "页面上有一个无序列表",
+            "definition": {
+                "nodes": "ul",
+                "exists": true
+            }
+        },
+        {
+            "description": "无序列表中有三个列表元素",
+            "definition": {
+                "nodes": "ul > li",
+                "get": "count",
+                "equals": 3
+            }
+        },
+        {
+            "description": "有一个列表元素显示'HTML'",
+            "definition": {
+                "nodes": "li",
+                "get": "innerHTML",
+                "limit": "some",
+                "hasSubstring": "HTML"
+            }
+        },
+        {
+            "description": "有一个列表元素显示'CSS'",
+            "definition": {
+                "nodes": "li",
+                "get": "innerHTML",
+                "limit": "some",
+                "hasSubstring": "CSS"
+            }
+        },
+        {
+            "description": "有一个列表元素显示'JavaScript'",
+            "definition": {
+                "nodes": "li",
+                "get": "innerHTML",
+                "limit": "some",
+                "hasSubstring": "(javascript)|(js)|(JavaScript)"
+            }
+        }
+    ]
+}]
