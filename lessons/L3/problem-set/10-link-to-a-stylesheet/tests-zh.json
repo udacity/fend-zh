@@ -1,0 +1,12 @@
+[{
+    "name": "链接到样式表",
+    "code": "aLINKtotheSTYLEZ",
+    "tests": [{
+        "description": "添加链接到样式表.",
+        "definition": {
+            "nodes": "link[rel=\"stylesheet\"]",
+            "attribute": "href",
+            "equals": "css/styles.css"
+        }
+    }]
+}]
