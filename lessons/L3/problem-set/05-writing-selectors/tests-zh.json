@@ -1,0 +1,38 @@
+[{
+  "name" : "编写选择器",
+  "code" : "andtheSELECTIONis",
+  "tests" : [
+    {
+      "description" : "将id选择器添加到menu样式",
+      "definition" : {
+        "nodes" : "#menu",
+        "cssProperty" : "text-align",
+        "equals" : "center"
+      }
+    },
+    {
+      "description" : "将class选择器添加到item样式.",
+      "definition" : {
+        "nodes" : ".item",
+        "cssProperty" : "color",
+        "equals" : "rgb(255, 0, 0)"
+      }
+    },
+    {
+      "description" : "将class选择器添加到picture样式.",
+      "definition" : {
+        "nodes" : ".picture",
+        "cssProperty" : "border-radius",
+        "equals" : "5px"
+      }
+    },
+    {
+      "description" : "将class选择器添加到description样式.",
+      "definition" : {
+        "nodes" : ".description",
+        "cssProperty" : "font-style",
+        "equals" : "italic"
+      }
+    }
+  ]
+}]
