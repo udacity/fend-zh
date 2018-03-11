@@ -1,0 +1,82 @@
+[{
+    "name": "HTML树测验",
+    "code": "letsclimbatree",
+    "tests": [{
+            "description": "body在页面上",
+            "definition": {
+                "nodes": "body",
+                "exists": true
+            }
+        },
+        {
+            "description": "有一个h1",
+            "definition": {
+                "nodes": "h1",
+                "get": "count",
+                "equals": 1
+            }
+        },
+        {
+            "description": "h1是body的一个子元素",
+            "definition": {
+                "nodes": "body > h1",
+                "exists": true
+            }
+        },
+        {
+            "description": "h1有内容",
+            "definition": {
+                "nodes": "body > h1",
+                "get": "innerHTML",
+                "hasSubstring": ".+"
+            }
+        },
+        {
+            "description": "有一个div元素",
+            "definition": {
+                "nodes": "div",
+                "get": "count",
+                "equals": 1
+            }
+        },
+        {
+            "description": "div是body的一个子元素",
+            "definition": {
+                "nodes": "body > div",
+                "exists": true
+            }
+        },
+        {
+            "description": "该div有两个子元素",
+            "definition": {
+                "nodes": "div > *",
+                "get": "count",
+                "equals": 2
+            }
+        },
+        {
+            "description": "它们是两个段落p元素",
+            "definition": {
+                "nodes": "p",
+                "get": "count",
+                "equals": 2
+            }
+        },
+        {
+            "description": "这些段落是div的子元素",
+            "definition": {
+                "nodes": "div > p",
+                "get": "count",
+                "equals": 2
+            }
+        },
+        {
+            "description": "这些段落中都包含有内容",
+            "definition": {
+                "nodes": "p",
+                "get": "innerHTML",
+                "hasSubstring": ".+"
+            }
+        }
+    ]
+}]
