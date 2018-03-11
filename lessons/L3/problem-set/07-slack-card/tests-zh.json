@@ -1,0 +1,46 @@
+[{
+  "name": "Slack用户卡片",
+  "code": "imnotslacking",
+  "tests": [
+    {
+      "description": "所有按钮都有4px的圆角边框",
+      "definition": {
+        "nodes": ".profile-action",
+        "cssProperty": "borderRadius",
+        "equals": "4px"
+      }
+    },
+    {
+      "description": "所有按钮有一个手形鼠标光标",
+      "definition": {
+        "nodes": ".profile-action",
+        "cssProperty": "cursor",
+        "equals": "pointer"
+      }
+    },
+    {
+      "description": "按钮的字体与页面的其余部分相匹配",
+      "definition": {
+        "nodes": ".profile-action",
+        "cssProperty": "fontFamily",
+        "hasSubstring": "Open Sans"
+      }
+    },
+    {
+      "description": "类名为 <strong>top</strong> 的元素拥有一个资源为 profile-placeholder.svg 的背景图片",
+      "definition": {
+        "nodes": ".top",
+        "cssProperty": "backgroundImage",
+        "hasSubstring": "profile-placeholder.svg"
+      }
+    },
+    {
+      "description": "卡片名称的书写错误被修正（Udacity Student）",
+      "definition": {
+        "nodes": ".name",
+        "get": "innerHTML",
+        "hasSubstring": "Udacity Student"
+      }
+    }
+  ]
+}]
