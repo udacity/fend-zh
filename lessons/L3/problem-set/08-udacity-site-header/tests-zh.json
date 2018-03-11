@@ -1,0 +1,41 @@
+[{
+  "name": "博客标题",
+  "code": "fullsteamahead",
+  "tests": [
+    {
+      "description": "header 元素拥有正确的文本颜色 <code>color</code> (<code>#697681</code>)",
+      "definition": {
+        "nodes": "header",
+        "cssProperty": "color",
+        "equals": "rgb(105, 118, 129)"
+      }
+    },
+    {
+      "description": "header文本的 <code>font-weight</code> 是 <code>400</code>",
+      "definition": {
+        "nodes": "header",
+        "cssProperty": "fontWeight",
+        "equals": [
+          "400",
+          "normal"
+        ]
+      }
+    },
+    {
+      "description": "Udacity 标志的 <code>width</code> 是 <code>200px</code>",
+      "definition": {
+        "nodes": ".logo",
+        "cssProperty": "width",
+        "equals": "200px"
+      }
+    },
+    {
+      "description": "body的 <code>background-color</code> 是 <code>#ddd</code>",
+      "definition": {
+        "nodes": "body",
+        "cssProperty": "backgroundColor",
+        "equals": "rgb(221, 221, 221)"
+      }
+    }
+  ]
+}]
