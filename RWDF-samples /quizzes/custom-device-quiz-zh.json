@@ -1,0 +1,36 @@
+[{
+    "name": "自定义设备测验",
+    "code": "timtheDEVTOOLmantaylor!",
+    "tests": [{
+            "description": "用户代理(User Agent)设置正确",
+            "definition": {
+                "get": "UAString",
+                "equals": "Mozilla/5.0 (Linux; Android 5.0; Nexus 6 Build/XXX00x) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.59 Mobile Safari/537.36"
+            }
+        },
+        {
+            "description": "视区(viewport)宽度是412px",
+            "definition": {
+                "waitForEvent": "ud-width",
+                "exists": true
+            }
+        },
+        {
+            "description": "视区(viewport)高度是603px",
+            "definition": {
+                "waitForEvent": "ud-height",
+                "exists": true
+            }
+        },
+        {
+            "description": "设备像素比(Device Pixel Ratio)是3.5",
+            "definition": {
+                "get": "DPR",
+                "isInRange": {
+                    "lower": 3.4999,
+                    "upper": 3.5001
+                }
+            }
+        }
+    ]
+}]
