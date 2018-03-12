@@ -1,0 +1,30 @@
+[{
+  "name": "设置视窗(Viewport)测验",
+  "code": "viewportsFTW!",
+  "tests": [
+    {
+      "description": "元标记(meta)描述了视窗(viewport)",
+      "definition": {
+        "nodes": "meta",
+        "limit": 1,
+        "attribute": "name",
+        "equals": "viewport"
+      }
+    },
+    {
+      "description": "元标记(meta)设置了内容",
+      "definition": {
+        "nodes": "meta",
+        "limit": 1,
+        "attribute": "content",
+        "hasSubstring": {
+          "expected": [
+            "width=device-width",
+            "initial-scale=1\\.?0?"
+          ],
+          "minValues": 2
+         }
+      }
+    }
+  ]
+}]
