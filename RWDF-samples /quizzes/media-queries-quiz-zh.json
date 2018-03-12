@@ -1,0 +1,27 @@
+[{
+  "name": "媒体查询测验",
+  "code": "BREAKingbadPOINTS",
+  "tests": [
+    {
+      "description": "宽度在400px以下时，body呈红色",
+      "definition": {
+        "waitForEvent": "ud-small",
+        "exists": true
+      }
+    },
+    {
+      "description": "在401和599px之间，body是绿色的",
+      "definition": {
+        "waitForEvent": "ud-medium",
+        "exists": true
+      }
+    },
+    {
+      "description": "宽度大于600px，body呈蓝色",
+      "definition": {
+        "waitForEvent": "ud-large",
+        "exists": true
+      }
+    }
+  ]
+}]

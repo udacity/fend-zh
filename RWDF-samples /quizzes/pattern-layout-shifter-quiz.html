@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Layout Shifter Quiz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../default-styles.css">
+    <style type="text/css">
+
+      .container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .box {
+        width: 100%;
+      }
+
+      @media screen and (min-width: 500px) {
+        .red {
+          order: -1;
+          width: 50%;
+        }
+        #container2 {
+          width: 50%;
+        }
+        .dark_blue {
+          order: 1;
+        }
+      }
+
+      @media screen and (min-width: 600px) {
+        .green {
+          order: -1;
+        }
+        .dark_blue {
+          width: 25%;
+          order: 2;
+        }
+        #container2 {
+          width: 50%;
+        }
+        .red {
+          width: 25%;
+          order: 1;
+        }
+
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box dark_blue"></div>
+      <div class="container" id="container2">
+        <div class="box light_blue"></div>
+        <div class="box green"></div>
+      </div>
+      <div class="box red"></div>
+    </div>
+  </body>
+</html>

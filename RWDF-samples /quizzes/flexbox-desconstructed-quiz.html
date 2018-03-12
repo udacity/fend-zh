@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Flexbox Deconstructed Quiz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../default-styles.css">
+    <style type="text/css">
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .box {
+        height: 100px;
+        text-align: center;
+        width: 100%;
+      }
+
+      header { width: 100%; order: 1;}
+      .dark_blue { width: 33.3333333%; order: 2;}
+      .light_blue { width: 33.3333333%; order: 4;}
+      .green { width: 50%; order: 5;}
+      .red { width: 33.3333333%; order: 3;}
+      .orange { width: 50%; order: 6;}
+      footer { width: 100%; order: 7;}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="box lime"></header>
+      <div class="box dark_blue"></div>
+      <div class="box light_blue"></div>
+      <div class="box green"></div>
+      <div class="box red"></div>
+      <div class="box orange"></div>
+      <footer class="box seafoam"></footer>
+    </div>
+  </body>
+</html>
