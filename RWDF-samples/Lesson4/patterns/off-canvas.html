@@ -26,18 +26,18 @@
 
 
       /*
-       * Off-canvas layout styles.
+       * Off-canvas 布局样式.
        */
 
-      /* Since we're mobile-first, by default, the drawer is hidden. */
+      /* 由于我们首先是移动设备，因此默认情况下，抽屉已隐藏. */
       nav {
         width: 300px;
         height: 100%;
         position: absolute;
-        /* This trasform moves the drawer off canvas. */
+        /* 该变换将抽屉移出画布. */
         -webkit-transform: translate(-300px, 0);
         transform: translate(-300px, 0);
-        /* Optionally, we animate the drawer. */
+        /* 或者，我们为抽屉设置动画. */
         transition: transform 0.3s ease;
       }
       nav.open {
@@ -45,17 +45,17 @@
         transform: translate(0, 0);
       }
 
-      /* If there is enough space (> 600px), we keep the drawer open all the time. */
+      /* 如果有足够的空间(>600 px)，我们总是把抽屉打开。*/
       @media (min-width: 600px) {
 
-        /* We open the drawer. */
+        /* 我们打开抽屉. */
         nav {
           position:relative;
           -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
         }
 
-        /* We use Flexbox on the parent. */
+        /* 我们在父服务器上使用 Flexbox. */
         body {
           display: -webkit-flex;
           display: flex;
@@ -65,15 +65,15 @@
 
         main {
           width: auto;
-          /* Flex-grow streches the main content to fill all available space. */
+          /* flex-grow 主要内容填充所有可用空间。 */
           flex-grow: 1;
         }
       }
 
-      /* If there is space (> 800px), we keep the drawer open by default. */
+      /* 如果有空间（> 800px），我们保持默认打开的抽屉. */
       @media (min-width: 600px) {
         main > #menu:after {
-          content: 'The drawer stays open if width > 600px';
+          content: '如果宽度超过 600px，抽屉就会保持打开状态。';
         }
         main p, nav p {
           text-decoration: line-through;
@@ -84,8 +84,8 @@
   </head>
   <body>
     <nav id="drawer" class="dark_blue">
-      <h2>Off Canvas</h2>
-      <p>Click outside the drawer to close</p>
+      <h2>关闭画布</h2>
+      <p>单击抽屉外的区域关闭</p>
     </nav>
 
     <main class="light_blue">
@@ -94,12 +94,12 @@
           <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
         </svg>
       </a>
-      <p>Click on the menu icon to open the drawer</p>
+      <p>单击菜单图标打开抽屉</p>
     </main>
 
     <script>
       /*
-       * Open the drawer when the menu ison is clicked.
+       * 单击菜单图标时打开抽屉.
        */
       var menu = document.querySelector('#menu');
       var main = document.querySelector('main');
